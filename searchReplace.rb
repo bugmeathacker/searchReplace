@@ -35,8 +35,8 @@ def url_downloader
     source
 end
 
-# trims url to shortend domain form with public_suffix gem
-# in order to make a valid and clean filename
+# Trims url to shortend domain form with public_suffix gem
+# in order to make a valid and clean filename.
 # https://github.com/weppos/publicsuffix-ruby
 def file_name_formater
     host = URI.parse($uri.to_s).host
@@ -62,7 +62,7 @@ def word_replace(source)
     new_source
 end
 
-# save resulting source code to current folder with domain as file name
+# Save resulting source code to current folder with domain as file name.
 def file_save(host, new_source)
     out_file = File.new("#{host}.html", "w")
     out_file.puts(new_source)
