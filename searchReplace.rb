@@ -59,7 +59,7 @@ def word_replace(source)
         puts "Error URL not a text filetype."
         exit
     end
-    new_source
+    return new_source
 end
 
 # Save resulting source code to current folder with domain as file name.
@@ -81,9 +81,9 @@ host = file_name_formater
 
 source = url_downloader
 
-new_source = word_search(source)
+word_search(source)
 
-word_replace(source)
+new_source = word_replace(source)
 
 file_save(host, new_source)
 
