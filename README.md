@@ -1,6 +1,6 @@
 # searchReplace
 
-Command line script to download URL, search and replace all occurences of string.
+Command line script that downloads URL, searches and replaces all occurences of a string.
 
 
 ## Prerequisites
