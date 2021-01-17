@@ -5,7 +5,7 @@ Command line script to download URL, search and replace all occurences of string
 
 ## Prerequisites
 
-The open_uri_redirections and public_suffix gems are requires.
+The open_uri_redirections and public_suffix gems are required.
 
 ```
 gem install open_uri_redirections publix_suffix
